@@ -5,8 +5,8 @@
     <h1 class="hero-title">FIFA WM 2026<br><span class="hero-highlight">Dein Guide</span></h1>
     <p class="hero-subtitle">Alles zu Spielplan, Tickets, Stadien & Reise — für deutsche Fans in USA, Kanada & Mexiko</p>
     <div class="hero-cta">
-      <a href="/spielplan/" class="btn btn-primary">Spielplan ansehen</a>
-      <a href="/tickets/" class="btn btn-outline">Tickets & Reise</a>
+      <a href="{{ "spielplan/" | relURL }}" class="btn btn-primary">Spielplan ansehen</a>
+      <a href="{{ "tickets/" | relURL }}" class="btn btn-outline">Tickets & Reise</a>
     </div>
     <div class="hero-badges">
       <span>⚽ 48 Teams</span>
@@ -43,22 +43,22 @@
   <div class="container">
     <h2 class="section-title with-line">Schnellzugriff</h2>
     <div class="quick-links">
-      <a href="/spielplan/" class="quick-link-card">
+      <a href="{{ "spielplan/" | relURL }}" class="quick-link-card">
         <span class="ql-icon">📅</span>
         <h3>Spielplan</h3>
         <p>Kompletter WM-Spielplan zum Download</p>
       </a>
-      <a href="/stadien/" class="quick-link-card">
+      <a href="{{ "stadien/" | relURL }}" class="quick-link-card">
         <span class="ql-icon">🏟️</span>
         <h3>Stadien</h3>
         <p>Alle 16 Stadien in 3 Ländern</p>
       </a>
-      <a href="/teams/" class="quick-link-card">
+      <a href="{{ "teams/" | relURL }}" class="quick-link-card">
         <span class="ql-icon">🌍</span>
         <h3>Teams</h3>
         <p>Alle 48 Teilnehmer & Favoriten</p>
       </a>
-      <a href="/tickets/" class="quick-link-card">
+      <a href="{{ "tickets/" | relURL }}" class="quick-link-card">
         <span class="ql-icon">🎟️</span>
         <h3>Tickets & Reise</h3>
         <p>Günstige Tickets, Hotels, Flüge</p>

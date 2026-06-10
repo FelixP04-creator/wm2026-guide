@@ -1,0 +1,8 @@
+{{- /* Hugo Markdown Render Hook for Links — fixes subdirectory paths */ -}}
+{{- $dest := .Destination -}}
+{{- $isExternal := or (strings.HasPrefix $dest "http://") (strings.HasPrefix $dest "https://") (strings.HasPrefix $dest "mailto:") (strings.HasPrefix $dest "#") -}}
+{{- if not $isExternal -}}
+  {{- /* Make root-relative paths respect the baseURL subdirectory */ -}}
+  {{- $dest = $dest | relURL -}}
+{{- end -}}
+<a href="{{ $dest | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
