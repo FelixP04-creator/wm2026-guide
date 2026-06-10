@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){const e=document.getElementById("navToggle"),t=document.getElementById("navList");e&&t&&e.addEventListener("click",function(){t.classList.toggle("open")})})
