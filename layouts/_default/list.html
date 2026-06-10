@@ -1,0 +1,23 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container">
+    <h1 class="section-title">{{ .Title }}</h1>
+    {{ with .Content }}
+    <div class="section-intro">{{ . }}</div>
+    {{ end }}
+    <div class="post-grid">
+      {{ range .Pages }}
+      <article class="post-card">
+        <a href="{{ .RelPermalink }}" class="post-card-link">
+          <h2 class="post-card-title">{{ .Title }}</h2>
+          {{ with .Description }}
+          <p class="post-card-desc">{{ . | truncate 200 }}</p>
+          {{ end }}
+          <span class="post-card-more">Weiterlesen →</span>
+        </a>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

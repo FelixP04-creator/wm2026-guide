@@ -1,0 +1,98 @@
+{{ define "main" }}
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1 class="hero-title">FIFA WM 2026<br><span class="hero-highlight">Dein Guide</span></h1>
+    <p class="hero-subtitle">Alles zu Spielplan, Tickets, Stadien & Reise — für deutsche Fans in USA, Kanada & Mexiko</p>
+    <div class="hero-cta">
+      <a href="/spielplan/" class="btn btn-primary">Spielplan ansehen</a>
+      <a href="/tickets/" class="btn btn-outline">Tickets & Reise</a>
+    </div>
+    <div class="hero-badges">
+      <span>⚽ 48 Teams</span>
+      <span>🏟️ 16 Stadien</span>
+      <span>🌎 3 Länder</span>
+      <span>🇩🇪 Deutschland dabei</span>
+    </div>
+  </div>
+</section>
+
+<!-- Aktuelle News -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title with-line">Aktuelles zur WM 2026</h2>
+    <div class="post-grid">
+      {{ $posts := where .Site.RegularPages "Type" "news" | first 4 }}
+      {{ range $posts }}
+      <article class="post-card">
+        <a href="{{ .RelPermalink }}" class="post-card-link">
+          <h3 class="post-card-title">{{ .Title }}</h3>
+          {{ with .Description }}
+          <p class="post-card-desc">{{ . | truncate 160 }}</p>
+          {{ end }}
+          <span class="post-card-more">Weiterlesen →</span>
+        </a>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- Quick Links -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title with-line">Schnellzugriff</h2>
+    <div class="quick-links">
+      <a href="/spielplan/" class="quick-link-card">
+        <span class="ql-icon">📅</span>
+        <h3>Spielplan</h3>
+        <p>Kompletter WM-Spielplan zum Download</p>
+      </a>
+      <a href="/stadien/" class="quick-link-card">
+        <span class="ql-icon">🏟️</span>
+        <h3>Stadien</h3>
+        <p>Alle 16 Stadien in 3 Ländern</p>
+      </a>
+      <a href="/teams/" class="quick-link-card">
+        <span class="ql-icon">🌍</span>
+        <h3>Teams</h3>
+        <p>Alle 48 Teilnehmer & Favoriten</p>
+      </a>
+      <a href="/tickets/" class="quick-link-card">
+        <span class="ql-icon">🎟️</span>
+        <h3>Tickets & Reise</h3>
+        <p>Günstige Tickets, Hotels, Flüge</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Reise-Guide Teaser -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Kostenloser WM 2026 Spielplan</h2>
+      <p>Trag dich in unseren Newsletter ein und erhalte den kompletten Spielplan als PDF — sowie aktuelle Infos zur WM.</p>
+      {{ partial "newsletter-form.html" . }}
+    </div>
+  </div>
+</section>
+
+<!-- Affiliate-Hotels -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title with-line">Hotels in den WM-Städten</h2>
+    <div class="post-grid">
+      {{ range where .Site.RegularPages "Section" "stadien" | first 4 }}
+      <article class="post-card">
+        <a href="{{ .RelPermalink }}" class="post-card-link">
+          <h3 class="post-card-title">{{ .Title }}</h3>
+          <p class="post-card-desc">Hotels & Unterkünfte für deine WM-Reise</p>
+          <span class="post-card-more">Stadion & Hotels ansehen →</span>
+        </a>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

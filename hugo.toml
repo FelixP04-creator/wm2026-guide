@@ -1,0 +1,52 @@
+baseURL = 'https://deinname.github.io/wm2026/'
+locale = 'de-DE'
+title = 'WM 2026 Guide — Spielplan, Tickets, Stadien & Reiseinfos'
+# Kein externes Theme — alles in layouts/ selbst gebaut
+
+[params]
+  description = 'Alles zur FIFA WM 2026 in USA, Kanada & Mexiko: Spielplan, Tickets, Stadien, Teams, Reisetipps & mehr. Der Guide für deutsche Fans.'
+  author = 'WM2026 Guide'
+  keywords = ['WM 2026', 'FIFA World Cup 2026', 'Fußball WM', 'WM Tickets', 'WM Stadien', 'WM Spielplan']
+  year = 2026
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # HTML in Markdown erlauben
+  [markup.highlight]
+    style = 'monokai'
+    noClasses = false
+
+[privacy]
+  [privacy.googleAnalytics]
+    disable = false
+    respectDoNotTrack = true
+  [privacy.youtube]
+    privacyEnhanced = true
+
+[outputs]
+  home = ['HTML', 'RSS']
+  section = ['HTML', 'RSS']
+  page = ['HTML']
+
+[menu]
+  [[menu.main]]
+    name = 'Spielplan'
+    url = '/spielplan/'
+    weight = 1
+  [[menu.main]]
+    name = 'Stadien'
+    url = '/stadien/'
+    weight = 2
+  [[menu.main]]
+    name = 'Teams'
+    url = '/teams/'
+    weight = 3
+  [[menu.main]]
+    name = 'Tickets & Reise'
+    url = '/tickets/'
+    weight = 4
+  [[menu.main]]
+    name = 'News'
+    url = '/news/'
+    weight = 5

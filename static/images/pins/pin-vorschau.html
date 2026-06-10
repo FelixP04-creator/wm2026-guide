@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WM 2026 — Pinterest Pins Vorschau</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, sans-serif;
+      background: #1a1a1a;
+      color: #fff;
+      padding: 2rem;
+    }
+    h1 { text-align: center; margin-bottom: .5rem; font-size: 2rem; }
+    .sub { text-align: center; color: #999; margin-bottom: 2rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .pin-card {
+      background: #222;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform .2s;
+    }
+    .pin-card:hover { transform: translateY(-4px); }
+    .pin-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .pin-info {
+      padding: 1rem;
+    }
+    .pin-info h3 {
+      font-size: 1rem;
+      margin-bottom: .3rem;
+    }
+    .pin-info p {
+      font-size: .85rem;
+      color: #aaa;
+      margin-bottom: .5rem;
+    }
+    .pin-info a {
+      color: #c8960c;
+      font-size: .8rem;
+    }
+    .download-btn {
+      display: inline-block;
+      padding: .5rem 1rem;
+      background: #c8960c;
+      color: #000 !important;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: .8rem !important;
+      margin-top: .5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>🏟️ WM 2026 Pinterest Pins</h1>
+  <p class="sub">6 hochwertige Pins — 1000×1500px — drucktauglich</p>
+
+  <div class="grid">
+    <div class="pin-card">
+      <img src="pin-01-spielplan.png" alt="WM 2026 Spielplan Pin" onerror="this.style.background='#1a5632'; this.style.minHeight='420px'; this.alt='Bild wird geladen...'">
+      <div class="pin-info">
+        <h3>📅 WM 2026 Spielplan</h3>
+        <p>104 Spiele, Gruppenphase bis Finale</p>
+        <a href="pin-01-spielplan.png" download>⬇ Download</a>
+      </div>
+    </div>
+
+    <div class="pin-card">
+      <img src="pin-02-tickets.png" alt="WM 2026 Tickets Pin">
+      <div class="pin-info">
+        <h3>🎟️ WM 2026 Tickets</h3>
+        <p>Preise, Verkaufsphasen & Spartipps</p>
+        <a href="pin-02-tickets.png" download>⬇ Download</a>
+      </div>
+    </div>
+
+    <div class="pin-card">
+      <img src="pin-03-stadien.png" alt="WM Stadien Pin">
+      <div class="pin-info">
+        <h3>🏟️ 16 Stadien in 3 Ländern</h3>
+        <p>Alle Arenen mit Hotel-Tipps</p>
+        <a href="pin-03-stadien.png" download>⬇ Download</a>
+      </div>
+    </div>
+
+    <div class="pin-card">
+      <img src="pin-04-reise.png" alt="WM Reise-Guide Pin">
+      <div class="pin-info">
+        <h3>✈️ Reise-Guide</h3>
+        <p>Flüge, Hotels, Visum, Routen</p>
+        <a href="pin-04-reise.png" download>⬇ Download</a>
+      </div>
+    </div>
+
+    <div class="pin-card">
+      <img src="pin-05-deutschland.png" alt="Deutschland WM 2026 Pin">
+      <div class="pin-info">
+        <h3>🇩🇪 Deutschland bei der WM</h3>
+        <p>Kader, Stars & Titel-Chancen</p>
+        <a href="pin-05-deutschland.png" download>⬇ Download</a>
+      </div>
+    </div>
+
+    <div class="pin-card">
+      <img src="pin-06-countdown.png" alt="WM Countdown Pin">
+      <div class="pin-info">
+        <h3>⏳ Countdown zur WM</h3>
+        <p>Newsletter + Spielplan sichern</p>
+        <a href="pin-06-countdown.png" download>⬇ Download</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

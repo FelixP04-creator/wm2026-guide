@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-size: 11pt;
+      line-height: 1.5;
+      color: #111;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1.5cm 1cm;
+    }
+    h1 { font-size: 22pt; text-align: center; margin-bottom: 2mm; color: #1a5632; }
+    h2 { font-size: 14pt; margin-top: 8mm; margin-bottom: 3mm; color: #1a5632; border-bottom: 2px solid #c8960c; padding-bottom: 2mm; }
+    h3 { font-size: 12pt; margin-top: 5mm; margin-bottom: 2mm; }
+    p { margin-bottom: 3mm; }
+    table { width: 100%; border-collapse: collapse; margin: 4mm 0; font-size: 9pt; page-break-inside: avoid; }
+    th { background: #1a5632; color: white; padding: 2mm 3mm; text-align: left; font-size: 9pt; }
+    td { border-bottom: 1px solid #ddd; padding: 1.5mm 3mm; }
+    tr:nth-child(even) td { background: #f9fafb; }
+    .pdf-notice {
+      background: #fef3c7; border: 1px solid #f59e0b;
+      padding: 3mm 5mm; margin-bottom: 5mm; border-radius: 4px;
+      font-size: 9pt; text-align: center;
+    }
+    .pdf-footer {
+      text-align: center; margin-top: 10mm; font-size: 8pt;
+      color: #999; border-top: 1px solid #ddd; padding-top: 3mm;
+    }
+    ul, ol { margin: 2mm 0 4mm 10mm; }
+    li { margin-bottom: 1mm; }
+    hr { margin: 6mm 0; border: none; border-top: 1px solid #ddd; }
+    .checklist-item { display: flex; gap: 3mm; align-items: flex-start; margin-bottom: 2mm; }
+    .checklist-item input { margin-top: 1mm; }
+    @media print {
+      body { padding: 0; }
+      .pdf-notice { display: none; }
+      @page { margin: 1.2cm; }
+    }
+  </style>
+</head>
+<body>
+  {{ .Content }}
+</body>
+</html>

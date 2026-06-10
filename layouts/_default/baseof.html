@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta name="keywords" content="{{ with .Keywords }}{{ delimit . ", " }}{{ else }}{{ delimit .Site.Params.keywords ", " }}{{ end }}">
+  <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
+  <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+
+  {{ $style := resources.Get "css/main.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} RSS" href="{{ .Site.BaseURL }}index.xml">
+
+  {{ template "_internal/google_analytics.html" . }}
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="{{ .Site.BaseURL }}" class="logo">
+        <span class="logo-icon">⚽</span>
+        <span class="logo-text">WM 2026 <small>Guide</small></span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list" id="navList">
+          {{ range .Site.Menus.main }}
+          <li><a href="{{ .URL }}" class="nav-link">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>WM 2026 Guide</h4>
+          <p>Dein unabhängiger Guide zur FIFA WM 2026 in USA, Kanada & Mexiko. Aktuelle Infos zu Spielplan, Tickets, Stadien & Reise.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            {{ range .Site.Menus.main }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Rechtliches</h4>
+          <ul>
+            <li><a href="/impressum/">Impressum</a></li>
+            <li><a href="/datenschutz/">Datenschutz</a></li>
+            <li><a href="/affiliate-info/">Affiliate-Info</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; {{ .Site.Params.year }} {{ .Site.Params.author }}. Mit 🤖 + ⚽ erstellt. Alle Angaben ohne Gewähr.</p>
+      </div>
+    </div>
+  </footer>
+
+  {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
+  <script src="{{ $js.RelPermalink }}" defer></script>
+</body>
+</html>

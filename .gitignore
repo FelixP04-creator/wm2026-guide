@@ -1,0 +1,21 @@
+# Hugo
+/public/
+/resources/
+/hugo_stats.json
+
+# Dependencies
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Generated pins (keep script, ignore output if desired)
+# static/images/pins/*.png
