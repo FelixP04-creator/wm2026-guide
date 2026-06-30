@@ -1,4 +1,4 @@
-baseURL = 'https://felixp04-creator.github.io/wm2026/'
+baseURL = 'https://felixp04-creator.github.io/wm2026-guide/'
 locale = 'de-DE'
 title = 'WM 2026 Guide — Spielplan, Tickets, Stadien & Reiseinfos'
 # Kein externes Theme — alles in layouts/ selbst gebaut
