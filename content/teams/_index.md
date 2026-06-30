@@ -93,4 +93,48 @@ Deutschland wird mit einer jungen, hochtalentierten Mannschaft antreten. Unsere 
 
 ---
 
+
+
+---
+
+## Alle 48 Teams im Überblick
+
+Klicke auf ein Team für detaillierte Infos, Ergebnisse und Analysen:
+
+### Gruppe A
+🇲🇽 [Mexiko](/wm2026/teams/mexiko/) · 🇿🇦 [Südafrika](/wm2026/teams/suedafrika/) · 🇰🇷 [Südkorea](/wm2026/teams/suedkorea/) · 🇨🇿 [Tschechien](/wm2026/teams/tschechien/)
+
+### Gruppe B
+🇨🇭 [Schweiz](/wm2026/teams/schweiz/) · 🇨🇦 [Kanada](/wm2026/teams/kanada/) · 🇧🇦 [Bosnien-Herzegowina](/wm2026/teams/bosnien-herzegowina/) · 🇶🇦 [Katar](/wm2026/teams/katar/)
+
+### Gruppe C
+🇧🇷 [Brasilien](/wm2026/teams/brasilien/) · 🇲🇦 [Marokko](/wm2026/teams/marokko/) · 🏴󠁧󠁢󠁳󠁣󠁴󠁿 [Schottland](/wm2026/teams/schottland/) · 🇭🇹 [Haiti](/wm2026/teams/haiti/)
+
+### Gruppe D
+🇺🇸 [USA](/wm2026/teams/usa/) · 🇦🇺 [Australien](/wm2026/teams/australien/) · 🇵🇾 [Paraguay](/wm2026/teams/paraguay/) · 🇹🇷 [Türkei](/wm2026/teams/tuerkei/)
+
+### Gruppe E
+🇩🇪 [Deutschland](/wm2026/teams/deutschland/) · 🇨🇮 [Elfenbeinküste](/wm2026/teams/elfenbeinkueste/) · 🇪🇨 [Ecuador](/wm2026/teams/ecuador/) · 🇨🇼 [Curaçao](/wm2026/teams/curacao/)
+
+### Gruppe F
+🇳🇱 [Niederlande](/wm2026/teams/niederlande/) · 🇯🇵 [Japan](/wm2026/teams/japan/) · 🇸🇪 [Schweden](/wm2026/teams/schweden/) · 🇹🇳 [Tunesien](/wm2026/teams/tunesien/)
+
+### Gruppe G
+🇧🇪 [Belgien](/wm2026/teams/belgien/) · 🇪🇬 [Ägypten](/wm2026/teams/aegypten/) · 🇮🇷 [Iran](/wm2026/teams/iran/) · 🇳🇿 [Neuseeland](/wm2026/teams/neuseeland/)
+
+### Gruppe H
+🇪🇸 [Spanien](/wm2026/teams/spanien/) · 🇨🇻 [Kap Verde](/wm2026/teams/kapverde/) · 🇺🇾 [Uruguay](/wm2026/teams/uruguay/) · 🇸🇦 [Saudi-Arabien](/wm2026/teams/saudiarabien/)
+
+### Gruppe I
+🇫🇷 [Frankreich](/wm2026/teams/frankreich/) · 🇳🇴 [Norwegen](/wm2026/teams/norwegen/) · 🇸🇳 [Senegal](/wm2026/teams/senegal/) · 🇮🇶 [Irak](/wm2026/teams/irak/)
+
+### Gruppe J
+🇦🇷 [Argentinien](/wm2026/teams/argentinien/) · 🇦🇹 [Österreich](/wm2026/teams/oesterreich/) · 🇩🇿 [Algerien](/wm2026/teams/algerien/) · 🇯🇴 [Jordanien](/wm2026/teams/jordanien/)
+
+### Gruppe K
+🇨🇴 [Kolumbien](/wm2026/teams/kolumbien/) · 🇵🇹 [Portugal](/wm2026/teams/portugal/) · 🇨🇩 [DR Kongo](/wm2026/teams/drkongo/) · 🇺🇿 [Usbekistan](/wm2026/teams/usbekistan/)
+
+### Gruppe L
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 [England](/wm2026/teams/england/) · 🇭🇷 [Kroatien](/wm2026/teams/kroatien/) · 🇬🇭 [Ghana](/wm2026/teams/ghana/) · 🇵🇦 [Panama](/wm2026/teams/panama/)
+
 *Letzte Aktualisierung: {{< now >}} | Die Qualifikation ist noch nicht abgeschlossen. Endgültige Teilnehmer stehen Ende 2025 fest.*

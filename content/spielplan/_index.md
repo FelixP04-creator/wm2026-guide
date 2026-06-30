@@ -55,9 +55,13 @@ Deutschland ist als eine der Top-Nationen gesetzt und wird aller Voraussicht nac
 - Topf 3: z.B. Ägypten, Ecuador, Südkorea
 - Topf 4: z.B. ein Concacaf-Qualifikant
 
+### 📥 Direkter Download
+
+👉 **[WM 2026 Spielplan als PDF herunterladen](/wm2026/files/wm-2026-spielplan.pdf)** (288 KB, Stand: 30. Juni 2026)
+
 ## WM 2026 Spielplan als PDF
 
-Wir haben den kompletten Spielplan als **druckerfreundliches PDF** aufbereitet — inklusive aller Gruppen, K.o.-Runden und Platz für eigene Ergebnisse. [Kostenloser Download mit unserem Newsletter!](/tickets/#newsletter)
+Wir haben den kompletten Spielplan als **druckerfreundliches PDF** aufbereitet — inklusive aller Ergebnisse der Gruppenphase und Sechzehntelfinals. [Kostenloser Download!](/wm2026/files/wm-2026-spielplan.pdf)
 
 ## Spielorte: Wo wird gespielt?
 
